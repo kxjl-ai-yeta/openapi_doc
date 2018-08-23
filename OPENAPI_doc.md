@@ -264,7 +264,7 @@ time_end|否|long|任务结束时间|毫秒时间戳
 {
    "task_name": "测试外呼",
    "line_num": "055169101407",
-   "robot_id": "11,
+   "robot_id": "11",
    "recall_count": 1,
    "time_recall_wait": 600,
    "time_range": ["09:00:00-12:00:00", "13:00:00-17:30:00"],
