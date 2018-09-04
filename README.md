@@ -4,3 +4,4 @@
 
 ### [接口API文档](https://github.com/kxjl-ai-yeta/openapi_doc/blob/master/OPENAPI_doc.md)
 
+### [JavaDemo](https://github.com/kxjl-ai-yeta/openapi_demo_java)
