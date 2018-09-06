@@ -511,31 +511,31 @@ sort_order|否|string|排序字段方式|"ASC" 正序 "DESC" 倒序
 
 名称|类型|必填|说明|值域
 ---|:-:|:-:|:-:|:-:
-total_rows|int|总行数
-**rows**|object[]|结果列表
+total_rows|int|是|总行数
+**rows**|object[]|是|结果列表
 task_id|string|是|任务id
 task_name|string|否|任务名称
 status|int|是|任务状态|0：新建，1：启动，2：运行，3：暂停，4：完成
 deleted|int|否|删除标志|1：删除，0：正常
 time_task_start|long|否|运行开始时间|毫秒时间戳
-time_task_finish|long|否|运行结束时间|毫秒时间戳(仅限普通任务)
+time_task_finish|long|否(仅限普通任务)|运行结束时间|毫秒时间戳
 process_count|int|否|已呼叫次数
 process_tel_count|int|否|已呼叫号码数
 process_through_count|int|否|已接通量
 process_through_rate|double|否|当前接通率
 count_tel|int|否|任务号码量
-count_recalled|int|否|任务已重试次数(仅限普通任务)
-time_task_estimate_begin|long|否|预设开始时间(仅限普通任务)
-time_task_estimate_end|long|否|预设结束时间(仅限普通任务)
-line_num|string|否|线路号码(仅限普通任务)
-robot_id|string|否|话术id(仅限普通任务)
-robot_name|string|否|话术名称(仅限普通任务)
-voice_code|string|否|发音人编码(仅限普通任务)
-voice_speed|int|否|发音人语速(仅限普通任务)
-count_max_recall|int|否|预设任务重试次数(仅限普通任务)
-time_recall_wait|int|否|预设重试外呼等待时间(仅限普通任务)|单位：秒。
-time_range|string|否|预设外呼时间段(仅限普通任务)
-intention_push|string|否|预设推送意向度门限(仅限普通任务)
+count_recalled|int|否(仅限普通任务)|任务已重试次数
+time_task_estimate_begin|long|否(仅限普通任务)|预设开始时间
+time_task_estimate_end|long|否(仅限普通任务)|预设结束时间
+line_num|string|否(仅限普通任务)|线路号码
+robot_id|string|否(仅限普通任务)|话术id
+robot_name|string|否(仅限普通任务)|话术名称
+voice_code|string|否(仅限普通任务)|发音人编码
+voice_speed|int|否(仅限普通任务)|发音人语速
+count_max_recall|int|否(仅限普通任务)|预设任务重试次数
+time_recall_wait|int|否(仅限普通任务)|预设重试外呼等待时间|单位：秒。
+time_range|string|否(仅限普通任务)|预设外呼时间段
+intention_push|string|否(仅限普通任务)|预设推送意向度门限
 
 ----------
 
