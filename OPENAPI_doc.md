@@ -442,7 +442,7 @@ task_id|是|string|任务id
 
 
 # 九、查询任务
-功能：查询任务信息和任务列表
+功能：查询任务信息和任务列表。
 
 接口地址：https://www.xfyeta.com/openapi/outbound/v1/task/query?token=08236d0aeeee4d5b566db5f4adc41a63  
 
@@ -517,6 +517,7 @@ total_rows|int|是|总行数
 task_id|string|是|任务id
 task_name|string|否|任务名称
 status|int|是|任务状态|0：新建，1：启动，2：运行，3：暂停，4：完成
+task_type|int|是|任务类型|0：普通任务,1：长期任务,2：任务池,3：预览任务
 deleted|int|否|删除标志|1：删除，0：正常
 time_task_start|long|否|运行开始时间|毫秒时间戳
 time_task_finish|long|否(仅限普通任务)|运行结束时间|毫秒时间戳
