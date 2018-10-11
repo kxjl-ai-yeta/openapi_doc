@@ -188,7 +188,18 @@ url_module|string|接口模块|详见Part2和Part3。
 voice_code|string|发音人编码
 voice_name|string|发音人名称
 
+### 常用发音人清单
+voice_name|voice_code|性别
+---|:-:|:-:
+春春	|65580|女声
+晓诗	|62140|女声
+晓燕	|60020|女声
+晓峰	|60030|男声
+小陈	|65660|男声
+楠楠	|60130|女声
+晓医	|65600|女声
 
+具体发音效果建议通过Web话术预览进行体验。
 
 ----------
 
@@ -491,7 +502,7 @@ sort_order|否|string|排序字段方式|"ASC" 正序 "DESC" 倒序
                 "robot_id":"719",
                 "robot_name":"测试话术无参数",
                 "voice_code":"60030",
-                "voice_speed":400,
+                "voice_speed":1,
                 "count_max_recall":2,
                 "status_recall":"[1,1]",
                 "time_recall_wait":2000,
@@ -533,7 +544,7 @@ line_num|string|否(仅限普通任务)|线路号码
 robot_id|string|否(仅限普通任务)|话术id
 robot_name|string|否(仅限普通任务)|话术名称
 voice_code|string|否(仅限普通任务)|发音人编码
-voice_speed|int|否(仅限普通任务)|发音人语速
+voice_speed|int|否(仅限普通任务)|发音人语速，默认1
 count_max_recall|int|否(仅限普通任务)|预设任务重试次数
 time_recall_wait|int|否(仅限普通任务)|预设重试外呼等待时间|单位：秒。
 time_range|string|否(仅限普通任务)|预设外呼时间段
