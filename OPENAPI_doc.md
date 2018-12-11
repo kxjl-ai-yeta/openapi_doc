@@ -586,7 +586,22 @@ date|否|string|日期|格式如yyyy-MM-dd
 ---|:-:|:-:
 url|string[]|文件下载相对路径。URL前缀https://www.xfyeta.com/push_download/
 
+### 文件示例
 
+下载路径 https://www.xfyeta.com/push_download/150/2018-12-04/0E050E000F0B000A060D0D0C0B0B0B03.zip
+
+~~~
+
+{"data":{"call_uuid":"01M21S470GDVR68B345H7B5AES01SKVK","business_id":"150","robot_id":"1161","task_id":"88785","task_data_id":"88547143","caller":"69101445","callee":"18656957753","direction":2,"time_dial":1543935195000,"time_answer":1543935205000,"time_hangup":1543935211000,"duration_ring":10,"duration_call":6,"task_result":"15","task_result_desc":"客户接听后并主动挂机","task_tries":0,"task_row_index":3,"task_row_head":["客户手机号码"],"task_row_value":["18656957753"]},"module":"receiveCallRecord","retryTimes":4,"timestamp":1543935214693}
+{"data":{"call_uuid":"8edf0c99-5b3d-4722-b1fb-10b2fbfecda2","business_id":"150","robot_id":"20001003","task_id":"504138886481984","task_data_id":"32264888839704576","caller":"69102936","callee":"18656957753","direction":2,"time_dial":1543935305290,"time_answer":1543935313230,"time_hangup":1543935444490,"duration_ring":7,"duration_call":131,"task_result":"0","task_result_desc":"成功","task_tries":0,"task_row_index":1,"task_row_head":["客户手机号码"],"task_row_value":["18656957753"]},"module":"receiveCallRecord","retryTimes":4,"timestamp":1543935447903}
+
+~~~
+名称| 类型|说明
+---|:-:|:-:
+data|object|推送数据，数据结构与对应推送接口完全一致
+module|string|模块名称，与Part2定义的消息名称一致
+retryTimes|int|尝试次数
+timestamp|long|消息创建时间戳
 
 
 
