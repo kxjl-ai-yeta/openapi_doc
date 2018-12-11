@@ -590,6 +590,8 @@ url|string[]|文件下载相对路径。URL前缀https://www.xfyeta.com/push_dow
 
 下载路径 https://www.xfyeta.com/push_download/150/2018-12-04/0E050E000F0B000A060D0D0C0B0B0B03.zip
 
+提醒：zip文件中可能包含多个文件或多层文件夹，建议使用org.apache.commons.io.FileUtils进行遍历处理。
+
 ~~~
 
 {"data":{"call_uuid":"01M21S470GDVR68B345H7B5AES01SKVK","business_id":"150","robot_id":"1161","task_id":"88785","task_data_id":"88547143","caller":"69101445","callee":"18656957753","direction":2,"time_dial":1543935195000,"time_answer":1543935205000,"time_hangup":1543935211000,"duration_ring":10,"duration_call":6,"task_result":"15","task_result_desc":"客户接听后并主动挂机","task_tries":0,"task_row_index":3,"task_row_head":["客户手机号码"],"task_row_value":["18656957753"]},"module":"receiveCallRecord","retryTimes":4,"timestamp":1543935214693}
