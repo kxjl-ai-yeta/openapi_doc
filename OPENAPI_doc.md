@@ -530,7 +530,7 @@ total_rows|int|是|总行数
 **rows**|object[]|是|结果列表
 task_id|string|是|任务id
 task_name|string|否|任务名称
-status|int|是|任务状态|0：新建，1：启动，2：运行，3：暂停，4：完成
+status|int|是|任务状态|0：新建，1：启动，2：运行，3：手动暂停，4：完成，5：暂停待下次重试，6：因不在工作时段暂停，7：因过期暂停
 task_type|int|是|任务类型|0：普通任务,2：任务池
 deleted|int|否|删除标志|1：删除，0：正常
 time_task_start|long|否|运行开始时间|毫秒时间戳
