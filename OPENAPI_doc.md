@@ -703,8 +703,8 @@ business_id||string|企业id|
 app_id||string|应用id|
 robot_id||string|话术话术id|
 call_uuid|是|string|通话UUID|录音和会话的唯一关联。
-caller|是|string|主叫号码|
-callee|是|string|被叫号码|
+caller||string|主叫号码|
+callee||string|被叫号码|
 direction|是|int|呼叫方向|1:呼入 2 呼出
 time_answer|是|long|接听时间戳|unix_time
 time_hangup|是|long|挂断时间戳|unix_time
