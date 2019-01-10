@@ -467,6 +467,7 @@ task_id|否|string|任务id
 time_begin|否|long|开始时间|
 time_end|否|long|结束时间|
 task_name|否|string|任务名称|模糊检索
+task_status_list|否|int[]|任务状态数组|0：新建，1：启动，2：运行，3：手动暂停，4：完成，5：等待下轮重试，6：不在工作时段，7：过期
 page_size|否|int|页大小|最大值50，默认20
 page_index|否|int|当前页码|从1开始
 sort_name|否|string|排序字段|ID：任务编号，NAME：任务名称，CREATETIME：任务创建时间，STARTTIME：任务开始时间，ENDTIME：任务结束时间
