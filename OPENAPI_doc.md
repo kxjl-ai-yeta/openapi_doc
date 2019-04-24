@@ -841,6 +841,8 @@ call_relation_id||string|呼入关联id|
 call_uuid|是|string|通话UUID|
 tag_max||string|最高意向度|
 tag_min||string|最低意向度|
+time_begin||long|开始时间戳|
+time_end||long|结束时间戳|
 **dialog**|是|array|交互记录|
 seq||int|节点序号|
 role||string|节点角色|robot话术customer客户
@@ -852,6 +854,8 @@ tag_desc||string|意向说明|
 text_robot||string|话术输出内容|
 text_man||string|用户输入内容|
 question_id||String|问题uuid|
+time_start||long|节点开始时间戳|
+time_speaking||long|用户说话时间戳|
 **hits**||array|命中|
 hit||string|命中内容|
 pick||boolean|是否选中|
