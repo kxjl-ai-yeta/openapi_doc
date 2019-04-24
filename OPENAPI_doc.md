@@ -274,6 +274,7 @@ time_range|否|string[]|外呼时间段|
 time_begin|是|long|任务开始时间|毫秒时间戳
 time_end|否|long|任务结束时间|毫秒时间戳
 voice_code|否|string|发音人编码|
+trubo_mode|否|boolean|高性能模式|默认false
 
 ### 请求示例
 ~~~
