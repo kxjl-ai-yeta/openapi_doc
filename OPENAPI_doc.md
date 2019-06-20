@@ -849,6 +849,7 @@ role||string|节点角色|robot话术customer客户
 node_id||string|节点id|
 node_name||string|节点名称|
 node_type||string|节点类型|
+label||string|节点标签|
 tag_name||string|意向|
 tag_desc||string|意向说明|
 text_robot||string|话术输出内容|
