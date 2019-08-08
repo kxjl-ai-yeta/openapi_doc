@@ -138,7 +138,7 @@ type|否|int|配置项分类。1：话术，2：线路，3：接口，4：发音
        "robots": [
            {
                "robot_id": "111111",
-               "robot_name": "金融外呼",
+               "robot_name": "金融",
                "call_column":["客户手机号码","姓名","性别"],
                "status": 4,
                "type": 1,
@@ -229,7 +229,7 @@ voice_code|否|string|发音人编码|
     "line_num":"69101338",
     "robot_id":"719",
     "call_column":["客户手机号码","姓名"],
-    "call_list":[["13000000001","张先生"],["13000000002","王女士"]],
+    "call_list":[["19900000001","张先生"],["19900000002","王女士"]],
     "voice_code":"60030"
 }
 
@@ -331,8 +331,8 @@ call_list|是|string[][]|数据行|单次上限50条
    "task_id": "129",
    "call_column": ["客户手机号码","列2", "列3"],
    "call_list": [
-         ["13000000001","t2","t3"],
-         ["13000000002","t2","t3"]
+         ["19900000001","t2","t3"],
+         ["19900000002","t2","t3"]
      ]
 }
 ~~~  
@@ -503,7 +503,7 @@ sort_order|否|string|排序字段方式|"ASC" 正序 "DESC" 倒序
                 "count_recalled":0,
                 "time_task_estimate_begin":1478157571217,
                 "time_task_estimate_end":0,
-                "line_num":"69101338",
+                "line_num":"96866001",
                 "robot_id":"719",
                 "robot_name":"测试话术无参数",
                 "voice_code":"60030",
@@ -599,8 +599,8 @@ url|string[]|文件下载相对路径。URL前缀https://www.xfyeta.com/push_dow
 
 ~~~
 
-{"data":{"call_uuid":"01M21S470GDVR68B345H7B5AES01SKVK","business_id":"150","robot_id":"1161","task_id":"88785","task_data_id":"88547143","caller":"69101445","callee":"18656957753","direction":2,"time_dial":1543935195000,"time_answer":1543935205000,"time_hangup":1543935211000,"duration_ring":10,"duration_call":6,"task_result":"15","task_result_desc":"客户接听后并主动挂机","task_tries":0,"task_row_index":3,"task_row_head":["客户手机号码"],"task_row_value":["18656957753"]},"module":"receiveCallRecord","retryTimes":4,"timestamp":1543935214693}
-{"data":{"call_uuid":"8edf0c99-5b3d-4722-b1fb-10b2fbfecda2","business_id":"150","robot_id":"20001003","task_id":"504138886481984","task_data_id":"32264888839704576","caller":"69102936","callee":"18656957753","direction":2,"time_dial":1543935305290,"time_answer":1543935313230,"time_hangup":1543935444490,"duration_ring":7,"duration_call":131,"task_result":"0","task_result_desc":"成功","task_tries":0,"task_row_index":1,"task_row_head":["客户手机号码"],"task_row_value":["18656957753"]},"module":"receiveCallRecord","retryTimes":4,"timestamp":1543935447903}
+{"data":{"call_uuid":"01M21S470GDVR68B345H7B5AES01SKVK","business_id":"150","robot_id":"1161","task_id":"88785","task_data_id":"88547143","caller":"055196866001","callee":"19900000001","direction":2,"time_dial":1543935195000,"time_answer":1543935205000,"time_hangup":1543935211000,"duration_ring":10,"duration_call":6,"task_result":"15","task_result_desc":"客户接听后并主动挂机","task_tries":0,"task_row_index":3,"task_row_head":["客户手机号码"],"task_row_value":["18656957753"]},"module":"receiveCallRecord","retryTimes":4,"timestamp":1543935214693}
+{"data":{"call_uuid":"8edf0c99-5b3d-4722-b1fb-10b2fbfecda2","business_id":"150","robot_id":"20001003","task_id":"504138886481984","task_data_id":"32264888839704576","caller":"055196866001","callee":"19900000001","direction":2,"time_dial":1543935305290,"time_answer":1543935313230,"time_hangup":1543935444490,"duration_ring":7,"duration_call":131,"task_result":"0","task_result_desc":"成功","task_tries":0,"task_row_index":1,"task_row_head":["客户手机号码"],"task_row_value":["18656957753"]},"module":"receiveCallRecord","retryTimes":4,"timestamp":1543935447903}
 
 ~~~
 名称| 类型|说明
@@ -764,8 +764,8 @@ task_result| task_result_desc| 备注
     "call_relation_id":"test-123",
     "task_id":"0",
     "task_data_id":"262381",
-    "caller":"69102939",
-    "callee":"15556985227",
+    "caller":"055196866001",
+    "callee":"19900000001",
     "direction":1,
     "time_dial":1527737756729,
     "time_ring":1527737757449,
@@ -1049,7 +1049,7 @@ answer_id||string|回答uuid|
 {
     "code": "SELF1",
     "task_data_id": 275821623314507,
-    "callee": "18005699514",
+    "callee": "19900000001",
     "dialog": [
         {
             "node_type": "NormalNode",
@@ -1087,7 +1087,7 @@ answer_id||string|回答uuid|
             "text_robot": "多次未识别发短信",
             "reject": 0,
             "node_name": "多次未识别发短信",
-            "text_man": "我18005699514",
+            "text_man": "我199123456789",
             "has_reply": 1,
             "un_hit": 0,
             "seq": 2,
@@ -1121,18 +1121,16 @@ answer_id||string|回答uuid|
             "node_id": "words_start_07deddaa-1"
         }
     ],
-    "caller": "18805512125",
+    "caller": "055196866001",
     "robot_id": 1993,
     "context": {
         "jwyuan": "ryhan",
-        "按键话术": "18005699514",
-        "开始节点": "18005699514",
-        "caller": "18805512125",
-        "手机号码": "18805512125",
-        "结束语发短信": "18005699514",
-        "callee": "18005699514",
-        "多次未识别发短信": "我18005699514",
-        "客户手机号码": "18555502209"
+        "按键话术": "19900000001",
+        "开始节点": "19900000001",
+        "手机号码": "19900000001",
+        "结束语发短信": "19900000001",
+        "多次未识别发短信": "我19900000001",
+        "客户手机号码": "19900000001"
     },
     "call_uuid": "019G2J01JGCV5AO1345H7B5AES074LH5",
     "call_relation_id": "111",
