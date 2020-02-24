@@ -1,4 +1,4 @@
-# 话术编辑接入说明
+# 话术编辑集成说明
 ## 接入步骤
 话术编辑目前可以通过iframe或a标签打开的方式进行集成。
 链接地址为：https://www.xfyeta.com/flow/#/flow/{mode}/{speechId}?token={token}&bid={busId}
