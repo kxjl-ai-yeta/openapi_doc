@@ -222,7 +222,7 @@ line_num|是|string|线路号码|
 call_column|是|string[]|外呼数据列| 
 call_list|是|string[][]|外呼数据行|单次上限50条
 voice_code|否|string|发音人编码|
-
+robot_speed|否|number|发音人语速|取值范围[-500,500],0为原速，数值大则语速快，对应于0.5~1.5倍线性关系
 ### 请求示例
 ~~~
 {
@@ -230,7 +230,8 @@ voice_code|否|string|发音人编码|
     "robot_id":"719",
     "call_column":["客户手机号码","姓名"],
     "call_list":[["19900000001","张先生"],["19900000002","王女士"]],
-    "voice_code":"60030"
+    "voice_code":"60030",
+    "robot_speed": 200
 }
 
 ~~~
